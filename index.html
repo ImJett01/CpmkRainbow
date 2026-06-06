@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CPMK Rainbow Emport Export Co.,Ltd</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f9fa;
+color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#228B22;
+}
+
+.nav-links a{
+text-decoration:none;
+margin-left:25px;
+color:#333;
+font-weight:500;
+}
+
+.nav-links a:hover{
+color:#228B22;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("image/fungicide01.png");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#28a745;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.about-text h3{
+font-size:32px;
+margin-bottom:20px;
+color:#228B22;
+}
+
+.about-text p{
+line-height:1.9;
+}
+
+/* CATEGORY */
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.category-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.category-card:hover{
+transform:translateY(-8px);
+}
+
+.category-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.category-card h3{
+padding:20px;
+text-align:center;
+color:#228B22;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+display:block;
+}
+
+.product-info{
+padding:20px;
+}
+
+.product-info h3{
+color:#228B22;
+margin-bottom:10px;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* CONTACT */
+
+.contact{
+background:#228B22;
+color:white;
+padding:60px;
+border-radius:25px;
+text-align:center;
+}
+
+.contact p{
+margin-top:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+CPMK Crop Protection
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#categories">Products</a>
+<a href="#featured">Featured</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Protecting Crops. Improving Yields.</h1>
+
+<p>
+Trusted Fungicide, Herbicide and Insecticide Solutions
+for Modern Agriculture.
+</p>
+
+<a href="#featured" class="btn">
+Explore Products
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Us</h2>
+<p>Crop Protection Solutions for Sustainable Agriculture</p>
+</div>
+
+<div class="about">
+
+<img src="image/herbicide01.png">
+
+<div class="about-text">
+
+<h3>Committed To Farmer Success</h3>
+
+<p>
+CPMK Crop Protection provides high-quality agricultural
+solutions designed to protect crops from weeds,
+insects and diseases. Our products help farmers
+increase productivity, improve crop quality and
+maximize profitability.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="categories">
+
+<div class="section-title">
+<h2>Product Categories</h2>
+<p>Professional Crop Protection Products</p>
+</div>
+
+<div class="categories">
+
+<div class="category-card">
+<img src="image/fungicide01.png">
+<h3>Fungicides</h3>
+</div>
+
+<div class="category-card">
+<img src="image/herbicide01.png">
+<h3>Herbicides</h3>
+</div>
+
+<div class="category-card">
+<img src="image/insecticide01.png">
+<h3>Insecticides</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="featured">
+
+<div class="section-title">
+<h2>Featured Products</h2>
+<p>Popular Crop Protection Solutions</p>
+</div>
+
+<div class="products">
+
+<div class="product-card">
+<img src="image/fungicide01.png">
+<div class="product-info">
+<h3>CPMK Fungicide</h3>
+<p>Broad-spectrum disease control for healthier crops.</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="image/herbicide01.png">
+<div class="product-info">
+<h3>CPMK Herbicide</h3>
+<p>Effective weed management for cleaner fields.</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="image/insecticide01.png">
+<div class="product-info">
+<h3>CPMK Insecticide</h3>
+<p>Advanced insect control and crop protection.</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="image/product04.png">
+<div class="product-info">
+<h3>Premium Crop Solution</h3>
+<p>Innovative agricultural technology for farmers.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Why Choose Us</h2>
+<p>Our Commitment To Agriculture</p>
+</div>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>✓ High Quality</h3>
+<p>Reliable and proven products.</p>
+</div>
+
+<div class="benefit">
+<h3>✓ Technical Support</h3>
+<p>Professional agricultural guidance.</p>
+</div>
+
+<div class="benefit">
+<h3>✓ Trusted Performance</h3>
+<p>Consistent field results.</p>
+</div>
+
+<div class="benefit">
+<h3>✓ Farmer Focused</h3>
+<p>Helping growers succeed.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: punlorksem111@gmail.com</p>
+
+<p>Telegram: @Sem_Punlork</p>
+
+<p>Phone: +855 XX XXX XXX</p>
+
+<p>Phnom Penh, Cambodia</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 CPMK Crop Protection. All Rights Reserved.
+</footer>
+
+</body>
+</html>
